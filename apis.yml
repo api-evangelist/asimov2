@@ -1,23 +1,58 @@
 aid: asimov2
+
 name: Asimov2
-description: 'Asimov2 is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: Asimov2 is currently a placeholder entry in the API Evangelist catalog, created from a secondary‑market harvest stub. No public website
+  or detailed corporate information is available at this time. The entry exists to enable future profiling once the company publishes an API or
+  provides verifiable documentation. This description provides context for the placeholder status and indicates that further data collection is
+  pending.
+
 url: https://raw.githubusercontent.com/api-evangelist/asimov2/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-26 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-26'
+
 modified: '2026-09-26'
+
 tags:
 - Company
-apis: []
+- Placeholder
+- Harvest
+- Stub
+- API-Evangelist
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Vendors
+  url: vendors/asimov2-vendors.yml
+- type: Hosts
+  url: hosts/asimov2-hosts.yml
 - type: Website
   url: https://equityzen.com/company/asimov2
+- type: DomainSecurity
+  url: security/asimov2-domain-security.yml
+
+apis:
+- name: Asimov
+  description: Synthetic biology platform offering tools for designing and manufacturing advanced therapeutics.
+  humanURL: https://www.asimov.com
+  aid: asimov2:asimov
+x-enrichment:
+  date: '2026-09-26'
+  status: enriched
+  artifacts_added: 4
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local
